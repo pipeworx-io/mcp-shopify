@@ -2,17 +2,17 @@
 
 Shopify MCP Pack — wraps the Shopify Admin REST API (2024-01)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
 | `shopify_list_products` | List products from a Shopify store. Returns up to 50 products by default. |
-| `shopify_get_product` | Get a single product by ID from a Shopify store. |
+| `shopify_get_product` | Fetch a single Shopify product by numeric ID, returning its title, description, variants, pricing, inventory, and images via the Admin API. |
 | `shopify_list_orders` | List orders from a Shopify store, optionally filtered by status. |
-| `shopify_get_order` | Get a single order by ID from a Shopify store. |
-| `shopify_list_customers` | List customers from a Shopify store. |
+| `shopify_get_order` | Fetch a single Shopify order by numeric ID, returning line items, customer info, fulfillment status, totals, and shipping address via the Admin API. |
+| `shopify_list_customers` | List customers in a Shopify store (up to 250 per call). Returns customer IDs, names, emails, order counts, and total spend. Requires Admin API access token and shop domain. |
 
 ## Quick Start
 
@@ -28,7 +28,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -52,7 +52,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
