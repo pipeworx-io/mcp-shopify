@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/shopify",
-  "title": "shopify",
+  "title": "Shopify",
   "description": "Shopify MCP Pack — wraps the Shopify Admin REST API (2024-01)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/shopify",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-shopify",
