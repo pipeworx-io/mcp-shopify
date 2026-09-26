@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-shopify",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Shopify MCP Pack — wraps the Shopify Admin REST API (2024-01)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-0b9d2eb22007cb7c04614be1782f3fb8d6c05b7bf7dc5ac61c83eb151a96e420",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-749815b89c3d0a477338048f0ff88ede577d57c36cd083b3aeaf2517de214d0b",
+    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
   }
 }

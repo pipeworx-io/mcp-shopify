@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/shopify",
   "title": "Shopify",
   "description": "Shopify MCP Pack — wraps the Shopify Admin REST API (2024-01)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/shopify",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-shopify",
