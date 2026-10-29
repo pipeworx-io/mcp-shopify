@@ -1,0 +1,133 @@
+[
+  {
+    "name": "shopify_list_products",
+    "description": "List products from a Shopify store. Returns up to 50 products by default.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Shopify Admin API access token"
+        },
+        "_shop": {
+          "type": "string",
+          "description": "Shop domain (e.g., mystore.myshopify.com)"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Number of products to return (max 250, default 50)"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "_shop"
+      ]
+    }
+  },
+  {
+    "name": "shopify_get_product",
+    "description": "Fetch a single Shopify product by numeric ID, returning its title, description, variants, pricing, inventory, and images via the Admin API.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Shopify Admin API access token"
+        },
+        "_shop": {
+          "type": "string",
+          "description": "Shop domain (e.g., mystore.myshopify.com)"
+        },
+        "id": {
+          "type": "number",
+          "description": "Product ID"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "_shop",
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "shopify_list_orders",
+    "description": "List orders from a Shopify store, optionally filtered by status.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Shopify Admin API access token"
+        },
+        "_shop": {
+          "type": "string",
+          "description": "Shop domain (e.g., mystore.myshopify.com)"
+        },
+        "status": {
+          "type": "string",
+          "description": "Filter by status: open, closed, cancelled, any (default: open)"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Number of orders to return (max 250, default 50)"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "_shop"
+      ]
+    }
+  },
+  {
+    "name": "shopify_get_order",
+    "description": "Fetch a single Shopify order by numeric ID, returning line items, customer info, fulfillment status, totals, and shipping address via the Admin API.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Shopify Admin API access token"
+        },
+        "_shop": {
+          "type": "string",
+          "description": "Shop domain (e.g., mystore.myshopify.com)"
+        },
+        "id": {
+          "type": "number",
+          "description": "Order ID"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "_shop",
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "shopify_list_customers",
+    "description": "List customers in a Shopify store (up to 250 per call). Returns customer IDs, names, emails, order counts, and total spend. Requires Admin API access token and shop domain.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Shopify Admin API access token"
+        },
+        "_shop": {
+          "type": "string",
+          "description": "Shop domain (e.g., mystore.myshopify.com)"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Number of customers to return (max 250, default 50)"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "_shop"
+      ]
+    }
+  }
+]
